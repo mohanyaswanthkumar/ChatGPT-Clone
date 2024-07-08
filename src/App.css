@@ -1,0 +1,183 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  color: black;
+}
+
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.sidebar{
+  flex: 3;
+  background-color: #F5F5F5;
+  border-right: 1px solid #CCCCCC;
+}
+
+.main{
+  flex: 9;
+  min-height: calc(100vh-14rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem 10rem;
+  margin-bottom: 0;
+}
+
+.logo{
+  margin-right: 1rem;
+}
+
+.brand{
+  font-size: 2rem;
+}
+
+.add{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  height: 40px;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  width: 25rem;
+  margin-bottom:3rem;
+  border-radius: 0.3rem;
+  border: 1px solid rgba(98, 98, 98,1);
+  cursor: pointer;
+}
+.add img{
+  filter: brightness(80%);
+  margin-left: -30%;
+}
+
+
+.query{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  width: 25rem;
+  margin:1rem auto;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(98, 98, 98,1);
+  cursor: pointer;
+}
+
+.query>img{
+  margin-right: 2rem;
+  object-fit: cover;
+  height: 1.75rem;
+}
+
+.upperside{
+  padding: 2.5rem;
+  border-bottom: 1px solid black;
+  height: 70%;
+}
+
+.uppersidetop{
+  display: flex;
+  align-items: center;
+  margin: 2.5rem;
+}
+
+.lowerside{
+  padding: 2rem;
+}
+
+.list-items{
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.list-items-img{
+  margin: 1rem;
+  padding-right: 1rem;
+}
+.chats{
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 500px;
+  padding: 5rem;
+}
+
+.chat{
+  margin: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.bot{
+  background-color: #F5F5F5;
+  width: fit-content;
+  padding: 2rem 3rem;
+}
+.chat-footer{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-img{
+  object-fit: cover;
+  margin-right: 2rem;
+}
+
+.chat-footer>p{
+  margin: 2rem 0;
+}
+
+.inp{
+  padding: 0.5rem;
+  background:rgba(98, 98, 98,1);
+  width: 70rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 20px;
+  background: transparent;
+}
+
+input{
+  border-radius: 5px;
+}
+.inp>input{
+  background: transparent;
+  border: 1px solid rgba(98, 98, 98,1);
+}
+
+.send{
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.inp>input{
+  width: calc(100%-3rem);
+  outline: none;
+  padding: 1.25rem;
+  color: black;
+  width: 100%;
+}
